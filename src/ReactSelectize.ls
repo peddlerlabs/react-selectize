@@ -170,7 +170,7 @@ module.exports = create-class do
                                     @highlight-and-scroll-to-selectable-option do
                                         @props.first-option-index-to-highlight @props.options
                                         1
-
+                            on-change: (e) ~> e.preventDefault()
                             # show the list of options (noop if caused by invocation of @focus-on-input function)
                             on-focus: (e) !~>
                                 # @focus-lock propery is set to true by invoking the @focus-on-input! method
