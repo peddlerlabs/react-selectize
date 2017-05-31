@@ -898,8 +898,6 @@
         return this$.props.onSearchChange(value, function(){
           return this$.highlightAndScrollToSelectableOption(this$.props.firstOptionIndexToHighlight(this$.props.options), 1);
         });
-      }, ref$.onChange = function(e){
-        return e.preventDefault();
       }, ref$.onFocus = function(e){
         (function(){
           return function(callback){
